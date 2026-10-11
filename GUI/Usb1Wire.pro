@@ -24,6 +24,7 @@ HEADERS += \
 linux:!android {
     SOURCES += hid/src/linux/hid.c
     DESTDIR = ../../Binary/linux
+    LIBS += -ludev
 }
 
 macx {
