@@ -13,7 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
     setWindowTitle(QApplication::applicationName());
 
     /* Create USB Custom HID device object */
-    hidDevice = new CustomHid(0x0483, 0xdf11);
+    hidDevice = new CustomHid(0x0483, 0x5711);
 
     /* Connecting signals to slots */
     connect(hidDevice, &CustomHid::showStatusBar,
